@@ -27,21 +27,21 @@ export default function renderMenu() {
 	content.classList += "menu";
 
 	const items = [
-		createItem("../src/assets/yumburger.png", "Yumburger", "Yumburger", "₱40"),
+		createItem("src/assets/yumburger.png", "Yumburger", "Yumburger", "₱40"),
 		createItem(
-			"../src/assets/1pc-chicken.png",
+			"src/assets/1pc-chicken.png",
 			"1 pc Chickenjoy",
 			"1 pc Chickenjoy",
 			"₱90"
 		),
 		createItem(
-			"../src/assets/jollispaghetti.png",
+			"src/assets/jollispaghetti.png",
 			"Jolli Spaghetti",
 			"Jolli Spaghetti",
 			"₱60"
 		),
 		createItem(
-			"../src/assets/2pc-burger-steak.png",
+			"src/assets/2pc-burger-steak.png",
 			"2 pc Burger Steak",
 			"2 pc Burger Steak",
 			"₱100"
