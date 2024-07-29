@@ -1,0 +1,161 @@
+@font-face {
+	font-family: "Jellee";
+	src: url("./assets/jellee.roman-webfont.woff2") format("woff2"),
+		url("./assets/jellee.roman-webfont.woff") format("woff");
+
+	font-weight: 600;
+	font-style: normal;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Jellee";
+}
+
+#content {
+	min-height: calc(100vh - 100px - 60px);
+}
+
+ul li {
+	text-decoration: none;
+	list-style-type: none;
+}
+
+button {
+	border: 0;
+	background: none;
+	cursor: pointer;
+	font-family: "Jellee";
+}
+
+#header > nav {
+	display: flex;
+	flex-direction: row;
+	height: 100px;
+
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	background-color: #c82037;
+
+	& button {
+		color: white;
+		font-size: 1.5rem;
+		opacity: 1;
+		transition: 0.2s;
+		padding: 10px;
+		margin: 0 10px;
+
+		&:hover {
+			opacity: 0.8;
+			transition: 0.2s;
+		}
+	}
+}
+
+/* HERO */
+.hero {
+	background-image: url("/src/assets/home_banner_1.png");
+	height: 500px;
+	background-position: center;
+	background-size: cover;
+
+	padding-left: 200px;
+	padding-right: 200px;
+
+	color: white;
+	display: flex;
+	flex-direction: column;
+
+	justify-content: center;
+	align-items: start;
+
+	& h1 {
+		font-size: 3rem;
+	}
+
+	& h2 {
+		font-size: 2rem;
+	}
+
+	& button {
+		color: #c82037;
+		font-size: 1.2rem;
+
+		background-color: orange;
+		padding: 10px 20px;
+		margin-top: 1rem;
+		border-radius: 10px;
+		transition: 0.3s;
+
+		&:hover {
+			color: white;
+			transition: 0.3s;
+		}
+	}
+}
+
+/* MISSION */
+.mission {
+	padding: 100px 200px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	text-align: center;
+	gap: 2rem;
+
+	img {
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+		border-radius: 20px;
+	}
+
+	.card-title {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		font-size: 2rem;
+	}
+}
+
+/* FOOTER */
+.footer {
+	width: 100%;
+	background-color: #c82037;
+	color: white;
+	height: 60px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* MENU */
+#content.menu {
+	padding-right: 200px;
+	padding-left: 200px;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-auto-rows: minmax(400px, max-content);
+	gap: 1rem;
+
+	& .item {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
+/* CONTACT PAGE */
+.contact {
+	padding: 100px 200px;
+
+	display: grid;
+	gap: 1rem;
+	justify-content: center;
+	align-items: center;
+}
