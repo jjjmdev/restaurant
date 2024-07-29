@@ -8,6 +8,7 @@ module.exports = {
 		filename: "main.js",
 		path: path.resolve(__dirname, "dist"),
 		clean: true,
+		assetModuleFilename: "src/assets/images/[name][ext]",
 	},
 
 	plugins: [
@@ -26,7 +27,7 @@ module.exports = {
 			},
 
 			{
-				test: /\.(woff|woff2|eot|ttf|otf)$/i,
+				test: /\.(png|jpg|gif|svg|eot|ttf|woff)$/,
 				type: "asset/resource",
 			},
 		],

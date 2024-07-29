@@ -1,3 +1,6 @@
+import whatWeDo from "../assets/what_we_do.png";
+import whatWeStandFor from "../assets/what_we_stand_for.png";
+
 import renderMenu from "./menu.js";
 
 function createHero() {
@@ -23,7 +26,7 @@ function createCards() {
 	mission.classList += "mission";
 	mission.innerHTML = `
 		<div class="card">
-			<img src="src/assets/what_we_do.png" alt="Staff serving" />
+			<img src=${whatWeDo} alt="Staff serving" />
 			<div class="card-title">What We Do</div>
 
 			<div class="card-description">
@@ -33,7 +36,7 @@ function createCards() {
 		</div>
 		
 		<div class="card">
-			<img src="src/assets/what_we_stand_for.png" alt="People eating" />
+			<img src=${whatWeStandFor} alt="People eating" />
 			<div class="card-title">What We Stand For</div>
 
 			<div class="card-description">
